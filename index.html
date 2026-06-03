@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>✦</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Space+Grotesk:wght@300;400;500&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══ LOCK SCREEN ══════════════════════════════ -->
+<div id="lock">
+  <canvas id="lock-canvas"></canvas>
+  <div id="lock-ui">
+    <div id="lock-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <rect x="3" y="11" width="18" height="11" rx="2"/>
+        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        <circle cx="12" cy="16" r="1.5" fill="currentColor" stroke="none"/>
+      </svg>
+    </div>
+    <p id="lock-hint">Entre le code pour accéder</p>
+    <div id="lock-dots">
+      <span class="ldot"></span><span class="ldot"></span>
+      <span class="ldot"></span><span class="ldot"></span>
+    </div>
+    <div id="lock-pad">
+      <button class="lkey" data-v="1">1</button><button class="lkey" data-v="2">2</button><button class="lkey" data-v="3">3</button>
+      <button class="lkey" data-v="4">4</button><button class="lkey" data-v="5">5</button><button class="lkey" data-v="6">6</button>
+      <button class="lkey" data-v="7">7</button><button class="lkey" data-v="8">8</button><button class="lkey" data-v="9">9</button>
+      <button class="lkey lkey-del" data-v="del">⌫</button>
+      <button class="lkey" data-v="0">0</button>
+      <button class="lkey lkey-ok" data-v="ok">↵</button>
+    </div>
+    <p id="lock-err">Code incorrect</p>
+  </div>
+</div>
+
+<!-- ══ SITE PRINCIPAL ════════════════════════════ -->
+<div id="site">
+
+  <!-- CURSEUR -->
+  <div id="cur"></div>
+  <div id="cur2"></div>
+
+  <!-- KONAMI -->
+  <div id="konami">
+    <div id="konami-box">
+      <p>✦ CHEAT CODE ✦</p>
+      <h2>Mode Amour Infini</h2>
+      <div id="konami-icons">❤️ 🕷️ 💕 ✨ 💖 🎉 💖 ✨ 🕷️ ❤️</div>
+      <button id="konami-close">Fermer</button>
+    </div>
+  </div>
+
+  <!-- ══ 0 — INTRO ══ -->
+  <section id="s0">
+    <canvas id="web-canvas"></canvas>
+    <div id="s0-years">
+      <span>2023</span>
+      <div id="s0-bar"></div>
+      <span>2026</span>
+    </div>
+    <div id="s0-scroll">scroll<div id="s0-line"></div></div>
+    <div id="egg0">🕷</div>
+  </section>
+
+  <!-- ══ 1 — TITRE ══ -->
+  <section id="s1">
+    <div id="s1-bg">love</div>
+    <div id="s1-content">
+      <h1 id="s1-title">
+        <span id="tl1">Toi</span>
+        <em id="tlamp">&</em>
+        <span id="tl2">Moi</span>
+      </h1>
+      <p id="s1-sub">3 ans de bonheur avec toi mon amour</p>
+    </div>
+    <div id="s1-floaters"></div>
+  </section>
+
+  <!-- ══ 2 — SPIDERMAN ══ -->
+  <section id="s2">
+    <canvas id="sp-canvas"></canvas>
+    <div id="s2-quote">
+      <p>"Un grand pouvoir<br>implique de grandes <em>responsabilités</em>"</p>
+      <span>Miles morales - Spiderman</span>
+    </div>
+    <div id="s2-spider">🕷️</div>
+  </section>
+
+
+  <!-- ══ 3 — VAN ══ -->
+  <section id="s3">
+    <div id="s3-sky">
+      <div id="s3-sun"></div>
+      <span class="cloud" style="top:12%;animation-duration:44s">☁</span>
+      <span class="cloud" style="top:22%;font-size:2rem;animation-duration:58s;animation-delay:-20s">☁</span>
+      <span class="cloud" style="top:8%;font-size:3rem;animation-duration:36s;animation-delay:-5s">⛅</span>
+      <div id="s3-stars"></div>
+    </div>
+    <div id="s3-mtn-back"></div>
+    <div id="s3-mtn-mid"></div>
+    <div id="s3-road"><div id="s3-marks"></div></div>
+    <div id="s3-van">
+      <div id="van-body">
+        <div id="van-win">🌅</div>
+        <span id="van-txt">♡ ROAD TRIP</span>
+      </div>
+      <div id="van-wheels">
+        <div class="wheel"></div>
+        <div class="wheel"></div>
+      </div>
+      <div id="van-puff">💨</div>
+    </div>
+    <p id="s3-caption">Un jour on aura notre van ♥</p>
+  </section>
+
+  <!-- ══ 4 — SURF ══ -->
+  <section id="s4">
+    <div id="s4-sky"></div>
+    <canvas id="wave-canvas"></canvas>
+    <div id="s4-text">
+      <h2>Timtim<br><em>le surfer</em></h2>
+      <p>Le sel dans les cheveux, le soleil dans les yeux</p>
+    </div>
+    <div id="s4-surfer">🏄</div>
+    <div id="s4-secret">🌊 mon lapinou le meilleur ! 🌊</div>
+  </section>
+
+  <!-- ══ 5 — FOOT ══ -->
+  <section id="s5">
+    <div id="s5-field">
+      <div id="ff-mid"></div><div id="ff-circle"></div>
+      <div id="ff-gl"></div><div id="ff-gr"></div>
+    </div>
+    <div id="s5-ball-wrap"><div id="s5-ball">⚽</div></div>
+    <div id="s5-hud">
+      <div id="s5-board">
+        <span>MON AMOUR<br>POUR TOI</span>
+        <span id="score-l">3</span>
+        <span>—</span>
+        <span id="score-r">0</span>
+        <span>PSG</span>
+      </div>
+      <p>Imbatable depuis 3 ans</p>
+    </div>
+    <div id="s5-goal">⚽ buut ! 🎉</div>
+  </section>
+
+  <!-- ══ 6 — PHOTOMATON ══ -->
+  <section id="s6">
+    <div id="s6-dots"></div>
+    <div id="s6-booth">
+      <div id="booth-top">
+        <div id="booth-flash"></div>
+        <p>PHOTOMATON</p>
+        <small>Nos plus beaux sourires</small>
+      </div>
+      <div id="booth-strip">
+        <div class="pframe"><img src="images/photo1.jpg" onerror="this.style.display='none'" alt=""/><div class="pfill">📸</div><p>Le début ♥</p></div>
+        <div class="pframe"><img src="images/photo2.jpg" onerror="this.style.display='none'" alt=""/><div class="pfill">📸</div><p>Le van on arriiive</p></div>
+        <div class="pframe"><img src="images/photo3.jpg" onerror="this.style.display='none'" alt=""/><div class="pfill">📸</div><p>Sous big rando à Annecy</p></div>
+        <div class="pframe"><img src="images/photo4.jpg" onerror="this.style.display='none'" alt=""/><div class="pfill">📸</div><p>Le meilleur copain ♥</p></div>
+      </div>
+      <div id="booth-slot"></div>
+    </div>
+    <p id="s6-deco">SOUVENIRS</p>
+  </section>
+
+
+  <!-- ══ 7 — MUSIQUE ══ -->
+  <section id="s7">
+    <div id="s7-vinyl">
+      <div id="vinyl-disc">
+        <div id="vinyl-label"><p>Notre</p><p>chanson</p></div>
+      </div>
+      <div id="vinyl-needle"></div>
+    </div>
+    <div id="s7-eq"><div id="eq-bars"></div></div>
+    <div id="s7-text">
+      <h2>Notre<br><em>musique</em></h2>
+    </div>
+    <div id="s7-msg">🎵 je t'aiiime 🎵</div>
+  </section>
+
+  <!-- ══ 8 — VIDÉO ══ -->
+  <section id="s8">
+    <div id="s8-content">
+      <p id="s8-eyebrow">Une petite surprise</p>
+      <h2 id="s8-title">Un an de<br><em>souvenirs</em></h2>
+      <div id="s8-player">
+        <video id="s8-video" controls playsinline>
+          <!--<source src="images/video.mp4" type="video/mp4">-->
+          <iframe src="https://youtu.be/ZJYSLiosgvQ"
+            title="Notre montage" frameborder="0" allowfullscreen></iframe>
+        </video>
+        <div id="s8-overlay">
+          <div id="s8-play">▶</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ 9 — FINAL ══ -->
+  <section id="s9">
+    <div id="s9-particles"></div>
+    <div id="s9-env">
+      <div id="env-body">
+        <div id="env-flap"></div>
+        <div id="env-letter">
+          <p class="el-hi">Mon lapinou,</p>
+          <p class="el-body">
+            J'ai passé les 3 meilleures années de ma vie à tes côtés.<br>
+            Il n'y a qu'avec toi que je me sens entière.<br>
+            On va vivre une vie incroyable, j'ai hâte de continuer à tout découvrir avec toi ♥<br><br>
+            Joyeux anniversaire à nous,</p>
+          <p class="el-sign">Je t'aime ❤️</p>
+        </div>
+      </div>
+      <p id="env-hint">Clique pour ouvrir ✉️</p>
+    </div>
+    <div id="s9-timer">
+      <div class="ti"><span id="ti-d">0</span><small>jours</small></div>
+      <div class="ti"><span id="ti-h">0</span><small>heures</small></div>
+      <div class="ti"><span id="ti-m">0</span><small>minutes</small></div>
+      <div class="ti"><span id="ti-s">0</span><small>secondes</small></div>
+    </div>
+    <p id="s9-since">ensemble depuis le <strong id="s9-date"></strong></p>
+  </section>
+
+</div><!-- /site -->
+<script src="script.js"></script>
+</body>
+</html>
