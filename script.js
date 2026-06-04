@@ -370,16 +370,6 @@ function animEq() {
 animEq();
 
   /* ════════════════════════════════════════════
-     S8 — VIDÉO
-  ════════════════════════════════════════════ */
-  const vid = $('s8-video'), overlay = $('s8-overlay');
-  if (vid && overlay) {
-    overlay.addEventListener('click', () => { vid.play(); overlay.classList.add('hidden'); });
-    vid.addEventListener('pause',  () => overlay.classList.remove('hidden'));
-    vid.addEventListener('ended',  () => overlay.classList.remove('hidden'));
-  }
-
-  /* ════════════════════════════════════════════
      S9 — FINAL
   ════════════════════════════════════════════ */
   const PCOLS = ['#c0392b', '#e91e63', '#ff6b9d', '#ffd700', '#fff'];
